@@ -1,0 +1,209 @@
+/*--------------------------------------------------------------
+# CSS FILE
+--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+:root{
+    /* Backgrou Color */
+    --bg-white: #fff;
+
+    /* Text Color */
+    --primary-text: #072c77;
+    --secondary-text: #0664f0;
+    --dark-color: #03262c;
+
+    /* Font family */
+    --font-primary: "Lato", sans-serif;
+    --font-secondary: "Barlow", sans-serif;
+}
+
+.container{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container header h2{
+    font-family: var(--font-primary);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container header nav ul{
+    list-style-type: none;
+}
+
+.container header nav ul li{
+    display: inline-block;
+    margin: 20px;
+}
+
+.container header nav ul li a{
+    text-decoration: none;
+    color: #012061;
+    font-size: 1.1rem;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.container header nav ul li a.focus{
+    color: #9e0322;
+    text-decoration: underline;
+}
+
+.container header nav ul li a:hover{
+    color: #9e0322;
+    text-decoration: underline;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+section #weather{
+    margin: 50px 0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.166);
+    border-radius: 10px;
+    width: 400px;
+}
+
+section .products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .products .box{
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.114);
+    margin: 10px;
+}
+
+section .products .box .img-box{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+section .products .box .img-box img{
+    width: 100%;
+    object-fit: contain;
+}
+
+section .products .box .content{
+    padding: 5px;
+}
+
+.btn-whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.261);
+}
+
+#smsForm{
+    width: 450px;
+    text-align: center;
+}
+
+#smsForm input, #smsForm textarea{
+    margin: 5px 0;
+}
+
+.weater{
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.166);
+    border-radius: 10px;
+}
+.weater .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weater .main .lower ul{
+    list-style-type: none;
+}
+
+.weater .main .lower ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+.sect-membres .member{
+    margin: 15px 0;
+    padding: 20px;
+    text-align: left;
+    border-top: 1px solid #011f6167;
+    border-bottom: 1px solid #011f6167;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/*--------------------------------------------------------------
+# CONTACT PQGE
+--------------------------------------------------------------*/
+
+.form-sect{
+    display: flex;
+    justify-content: center;
+}
+.contact-form .col-12 button{
+    background-color: var(--dark-color);
+    color: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+}
+
+.contact-form .col-12 button:hover{
+    background-color: var(--primary-text);
+}
+
+/* .contact-form .errors{
+    padding: 0;
+} */
+
+.contact-form .hide-bloc,
+#login-form .hide-bloc{
+   display: none; 
+}
+
+.contact-form .show-bloc,
+#login-form .show-bloc{
+   display: block; 
+}
+.contact-form .btn{
+    color: #fbfbfb;
+}
+
+.contact-form .error-msg{
+    font-family: var(--font-secondary);
+    background-color: rgb(4, 162, 4);
+    color: var(--bg-white);
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    display: none;
+}
+
+

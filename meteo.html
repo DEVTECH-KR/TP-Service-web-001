@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>INTERNET CONNECT - JOBS</title>
+
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Font awesome 5 cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css" integrity="sha512-r/Gan7PMSRovDus++vDS2Ayutc/cSdl268u047n4z+k7GYuR7Hiw71FsT3QQxdKJBVHYttOJ6IGLnlM9IoMToQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>   
+        <h2>DEVTECH WEB SITE</h2>
+        <nav>
+          <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="produit.html">Nos produits</a></li>
+            <li><a href="#" class="focus">Meteo</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="mt-5">
+        <div class="weater">
+            <div class="main">
+                <div class="upper box">
+                    <figure class="name">
+                        <figcaption>Burundi</figcaption>
+                        <img src="https://flagsapi.com/BI/shiny/32.png">
+                    </figure>
+
+                    <figure class="temperature">
+                        <img src="https://openweathermap.org/img/wn/10d@4x.png">
+                        <figcaption>
+                            <span>31</span>
+                            <sup>o</sup>
+                        </figcaption>
+                    </figure>
+                    <p class="description">overcast clouds</p>
+                </div>
+                <div class="lower box">
+                    <ul>
+                        <li>
+                            <span class="ups">clouds</span>
+                            <img src="./assets/images/cloud.png" alt="">
+                            <span id="clouds" class="dow">98</span>%
+                        </li>
+                        <li>
+                            <span class="ups">humidity</span>
+                            <img src="./assets/images/humidity.png" alt="">
+                            <span id="humidity" class="dow">98</span>%
+                        </li>
+                        <li>
+                            <span class="ups">pressure</span>
+                            <img src="./assets/images/pression.png" alt="" style="width: 70px;">
+                            <span id="pressure" class="dow">1011</span>hPa
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+    </div>
+    
+    <div class="contact-wtsp">
+      <a href="https://wa.me/25767651523" target="_blank" class="btn btn-success link-text btn-whatsapp">
+        <i class="bi bi-whatsapp"></i>
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <script src="js/weather.js"></script>
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
